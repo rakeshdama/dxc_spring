@@ -4,9 +4,11 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.rakesh" ></context:component-scan>
-     <bean id="tyre" class="com.rakesh.Tyre">
-           <property name="brand" value="CEAT"></property>
-       </bean>
+    <context:component-scan base-package="com.rakesh"></context:component-scan>
+    <bean id="tyre" class="com.rakesh.Tyre">
+
+        <constructor-arg value="MRF"></constructor-arg>
+<!--        <property name="brand" value="CEAT"></property>-->
     <!--  <bean id="vehicle" class="com.rakesh.Bike" />-->
+    </bean>
 </beans>
