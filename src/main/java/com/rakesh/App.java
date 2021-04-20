@@ -6,10 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-      /*  Vehicle vehicle = (Vehicle) context.getBean("car");
-        vehicle.drive();*/
+        Car obj = (Car) context.getBean("car");
+        obj.drive();
 
-        Tyre tyre = (Tyre) context.getBean("tyre");
-        System.out.println(tyre);
+/*        Tyre tyre = (Tyre) context.getBean("tyre");
+        System.out.println(tyre);*/
     }
 }

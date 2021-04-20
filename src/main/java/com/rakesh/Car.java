@@ -11,7 +11,7 @@ public class Car implements Vehicle{
     }
 
     @Autowired
-    Tyre tyre;
+   private Tyre tyre;
 
     public Tyre getTyre() {
         return tyre;
