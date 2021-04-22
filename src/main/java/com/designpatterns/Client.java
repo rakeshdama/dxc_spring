@@ -6,8 +6,8 @@ public class Client {
         Internet internet = new ProxyInternet();
         try
         {
-            internet.connectTo("geeksforgeeks.org");
-            internet.connectTo("abc.com");
+            internet.connectTo("rakeshdama.me");
+            internet.connectTo("google.com");
         }
         catch (Exception e)
         {
